@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Canton provides a mechanism -- offline party replication -- that allows a keyholder and to collaborate with node operators to extend a party’s hosting rights, and the data controlled by that party, from one Validator node to another. This hosting [replication mechanism](https://docs.canton.network/global-synchronizer/production-operations/party-management#offline-party-replication-steps) requires the target node to stop transacting while an operator moves an active contract set from a source node to the target node via a file export and import.
+Canton provides a mechanism -- offline party replication -- that allows a keyholder to collaborate with node operators to extend a party’s hosting rights, and the data controlled by that party, from one Validator node to another. This hosting [replication mechanism](https://docs.canton.network/global-synchronizer/production-operations/party-management#offline-party-replication-steps) requires the target node to stop transacting while an operator moves an active contract set from a source node to the target node via a file export and import.
 
 This proposal funds online party replication, which moves a party's active contract set between Validators over a **sequencer channel** while the party continues to transact. In this approach, the act of onboarding a party to a new node, via topology transaction, triggers a transfer of that party’s contract state from a source Validator to this new node.
 
